@@ -1,0 +1,324 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Brighten your home with elegance. Explore our collection of chandeliers, ceiling lights, and more.">
+    <title>Lights & Chandelier Shop</title>
+    <style>
+        /* General Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f9;
+        }
+
+        a {
+            text-decoration: none;
+            color: #007bff;
+        }
+
+        a:hover {
+            color: #0056b3;
+        }
+
+        /* Header */
+        header {
+            background: #333;
+            color: #fff;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            font-size: 1.5rem;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 1rem;
+        }
+
+        .nav-links li a {
+            color: #fff;
+            font-weight: bold;
+        }
+
+        .nav-links li a:hover {
+            text-decoration: underline;
+        }
+
+        /* Hero Section */
+        .hero {
+    background: url('logo.jpg') no-repeat center center/cover;
+    color: white;
+    height: 100vh; /* Increase height to make it larger */
+    width: 100%; /* Ensure it spans the full width of the screen */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2rem; /* Add some padding to ensure content doesn't feel cramped */
+}
+
+
+        .hero-text h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .cta-button {
+            background: #007bff;
+            color: #fff;
+            padding: 0.7rem 1.5rem;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+
+        .cta-button:hover {
+            background: #0056b3;
+        }
+
+        /* Products Section */
+        .products {
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .products h2 {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .product-card {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 1rem;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .product-card img  { 
+            max-width: 100%;
+            border-radius: 5px;
+            margin-bottom: 1rem;
+        }
+
+        .product-card button {
+            background: #007bff;
+            color: #fff;
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .product-card button:hover {
+            background: #0056b3;
+        }
+
+        /* Categories Section */
+        .categories {
+            background: #007bff;
+            color: white;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .categories h2 {
+            margin-bottom: 1.5rem;
+        }
+
+        .categories-list a {
+            display: inline-block;
+            background: white;
+            color: #007bff;
+            margin: 0.5rem;
+            padding: 0.7rem 1.5rem;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .categories-list a:hover {
+            background: #0056b3;
+            color: white;
+        }
+
+        /* About Us Section */
+        .about {
+            padding: 2rem;
+            background: #f9f9f9;
+            text-align: center;
+        }
+
+        .about h2 {
+            margin-bottom: 1rem;
+        }
+
+        .about p {
+            max-width: 600px;
+            margin: auto;
+            line-height: 1.8;
+        }
+
+        /* Contact Section */
+        .contact {
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .contact form {
+            max-width: 500px;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .contact form input,
+        .contact form textarea {
+            width: 100%;
+            padding: 0.7rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .contact form button {
+            background: #007bff;
+            color: white;
+            border: none;
+            padding: 0.7rem;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .contact form button:hover {
+            background: #0056b3;
+        }
+
+        /* Footer */
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        .social-links a {
+            margin: 0 0.5rem;
+            color: white;
+        }
+
+        .social-links a:hover {
+            color: #007bff;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <h1>Lights & Chandelier Shop</h1>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#categories">Categories</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+                <li><a href="#login">Login/Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-text">
+            <h2>Brighten Your Home with Elegance</h2>
+            <p>Explore our collection of premium chandeliers, ceiling lights, and more.</p>
+            <a href="#products" class="cta-button">Shop Now</a>
+        </div>
+    </section>
+
+    
+
+    
+
+            
+            <section id="products" class="products">
+                <h2>Our Featured Products</h2>
+                <div class="product-grid">
+                    <div class="product-card">
+                        <img src="luxury.jpg" alt="Luxury Chandelier">
+                        <h3>Luxury Chandelier</h3>
+                        <p>$200.00</p>
+                        <button>Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="Modern.jpg" alt="Modern Ceiling Light">
+                        <h3>Modern Ceiling Light</h3>
+                        <p>$150.00</p>
+                        <button>Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="Italian.jpg" alt="Wall Light">
+                        <h3>Wall Light</h3>
+                        <p>$120.00</p>
+                        <button>Add to Cart</button>
+                    </div>
+                </div>
+            </section>
+            <!-- Categories Section -->
+    <section id="categories" class="categories">
+        <h2>Shop by Categories</h2>
+        <div class="categories-list">
+            <a href="#">Chandeliers</a>
+            <a href="#">Ceiling Lights</a>
+            <a href="#">Wall Lights</a>
+            <a href="#">Outdoor Lighting</a>
+        </div>
+    </section>
+    <!-- About Us Section -->
+    <section id="about" class="about">
+        <h2>About Us</h2>
+        <p>Welcome to the Lights & Chandelier Shop! Our mission is to bring you high-quality lighting solutions that add elegance and functionality to your home. From luxurious chandeliers to modern ceiling lights, we have it all.</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <form action="#" method="post">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" rows="5" placeholder="Your Message"></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Lights & Chandelier Shop. All Rights Reserved.</p>
+        <div class="social-links">
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
